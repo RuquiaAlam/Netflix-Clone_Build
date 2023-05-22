@@ -1,0 +1,11 @@
+[build]
+base="Netflix/netflixclone"
+publish = "build-output/"
+ command = "echo 'default context'"
+   package = "@netlify/plugin-lighthouse"
+   [context.production]
+  publish = "output/"
+  command = "make publish"
+  environment = { NODE_VERSION = "14.15.3" }
+  [context.deploy-preview]
+  publish = "dist/"

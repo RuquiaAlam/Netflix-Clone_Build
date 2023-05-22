@@ -61,12 +61,13 @@ const unsubscribe = auth.onAuthStateChanged((userAuth) =>
       ) : (
 
         <Switch>
+            <Route exact path="/">
+          <HomeScreen />
+          </Route>
         <Route path ="/profile">
           <ProfileScreen />
           </Route>
-          <Route exact path="/">
-          <HomeScreen />
-          </Route>
+        
       
         </Switch>
 
