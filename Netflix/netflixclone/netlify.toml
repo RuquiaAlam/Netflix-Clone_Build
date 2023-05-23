@@ -1,2 +1,3 @@
 [build]
 base="Netflix/netflixclone"
+CI= npm run build.
